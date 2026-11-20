@@ -3,6 +3,7 @@ import org.greenlight.geometry.library.shapes.Circle;
 import org.greenlight.geometry.library.shapes.Rectangle;
 import org.greenlight.geometry.library.shapes.Shape;
 import org.greenlight.geometry.library.shapes.Triangle;
+import org.greenlight.geometry.utils.GeometryUtils;
 
 import java.util.List;
 
@@ -20,5 +21,7 @@ public class Application {
                     shape.getArea(),
                     shape.getPerimeter());
         }
+
+        System.out.println(GeometryUtils.compareByArea(new Circle(3.0), new Circle(4.0)));
     }
 }
